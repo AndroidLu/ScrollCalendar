@@ -13,14 +13,11 @@
         android:layout_height="wrap_content"
         app:titleTextColor="@color/red" />
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/gray_light" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:visibility="gone"
         android:orientation="horizontal">
 
         <com.rafalmanka.example.DateLabel
@@ -44,15 +41,26 @@
             scrollcalendar:hint="Ending at" />
     </LinearLayout>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/gray_light" />
-
     <pl.rafman.scrollcalendar.ScrollCalendar
         android:id="@+id/scrollCalendar"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        scrollcalendar:currentDayStyle="@style/CurrentDayStyle"
+        scrollcalendar:dayStyle="@style/DayStyle"
+        scrollcalendar:monthTitleStyle="@style/MonthTitleStyle"
+        scrollcalendar:disabledItemStyle="@style/DisabledItemStyle"
+        scrollcalendar:unavailableItemStyle="@style/UnavailableItemStyle"
         android:layout_weight="1" />
+    <!--<pl.rafman.scrollcalendar.ScrollCalendar-->
+        <!--android:id="@+id/scrollCalendar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--scrollcalendar:adapter="none"-->
+        <!--scrollcalendar:currentDayStyle="@style/CurrentDayStyle"-->
+        <!--scrollcalendar:customFont="fonts/montserrat-light.otf"-->
+        <!--scrollcalendar:dayStyle="@style/DayStyle"-->
+        <!--scrollcalendar:disabledItemStyle="@style/DisabledItemStyle"-->
+        <!--scrollcalendar:unavailableItemStyle="@style/UnavailableItemStyle" />-->
 
 </LinearLayout>

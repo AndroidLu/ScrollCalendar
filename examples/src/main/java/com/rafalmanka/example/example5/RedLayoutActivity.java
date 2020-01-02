@@ -29,14 +29,14 @@ public class RedLayoutActivity extends AppCompatActivity {
         scrollCalendar.setOnDateClickListener(new OnDateClickListener() {
             @Override
             public void onCalendarDayClicked(int year, int month, int day) {
-                ScrollCalendarAdapter adapter = scrollCalendar.getAdapter();
-                if (adapter instanceof DefaultRangeScrollCalendarAdapter) {
-                    DefaultRangeScrollCalendarAdapter rangeAdapter = (DefaultRangeScrollCalendarAdapter) adapter;
-                    Date start = rangeAdapter.getStartDate();
-                    from.setDate(start);
-                    to.setCta(start == null ? "" : getString(R.string.select_ending_date));
-                    to.setDate(rangeAdapter.getEndDate());
-                }
+//                ScrollCalendarAdapter adapter = scrollCalendar.getAdapter();
+//                if (adapter instanceof DefaultRangeScrollCalendarAdapter) {
+//                    DefaultRangeScrollCalendarAdapter rangeAdapter = (DefaultRangeScrollCalendarAdapter) adapter;
+//                    Date start = rangeAdapter.getStartDate();
+//                    from.setDate(start);
+//                    to.setCta(start == null ? "" : getString(R.string.select_ending_date));
+//                    to.setDate(rangeAdapter.getEndDate());
+//                }
             }
         });
     }

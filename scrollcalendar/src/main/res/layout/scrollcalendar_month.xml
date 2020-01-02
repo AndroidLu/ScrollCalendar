@@ -9,9 +9,10 @@
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:padding="20dp"
-        tools:textSize="25sp"
+        android:background="#FFF2F3F7"
+        android:paddingTop="9dp"
+        android:paddingBottom="9dp"
+        android:paddingLeft="16dp"
         tools:text="September" />
 
     <LinearLayout
@@ -20,8 +21,9 @@
         android:layout_height="wrap_content"
         android:orientation="vertical" />
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="20dp" />
+    <!--<Space-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="20dp"-->
+        <!--android:background="@color/scrollcalendar_primarynew"/>-->
 
 </LinearLayout>

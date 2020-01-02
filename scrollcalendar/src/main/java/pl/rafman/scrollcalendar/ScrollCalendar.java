@@ -10,8 +10,6 @@ import android.support.v7.widget.LinearLayoutCompat;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
-import android.view.View;
-import android.widget.LinearLayout;
 
 import pl.rafman.scrollcalendar.adapter.ResProvider;
 import pl.rafman.scrollcalendar.adapter.ScrollCalendarAdapter;
@@ -115,7 +113,7 @@ public class ScrollCalendar extends LinearLayoutCompat implements ResProvider {
 
     @SuppressWarnings("unused")
     public void refresh() {
-        refreshLegend();
+//        refreshLegend();
         getAdapter().notifyDataSetChanged();
     }
 
@@ -135,16 +133,17 @@ public class ScrollCalendar extends LinearLayoutCompat implements ResProvider {
     @Override
     protected void onFinishInflate() {
         super.onFinishInflate();
-        setupLegend();
-        setupSeparatorStyle();
+//        setupLegend();
+
+//        setupSeparatorStyle();
         setupRecyclerView();
     }
 
     private void setupLegend() {
-        LinearLayout legendHolder = findViewById(R.id.legend);
-        for (LegendItem legendItem : legend) {
-            legendHolder.addView(legendItem.layout(legendHolder, this));
-        }
+//        LinearLayout legendHolder = findViewById(R.id.legend);
+//        for (LegendItem legendItem : legend) {
+//            legendHolder.addView(legendItem.layout(legendHolder, this));
+//        }
         refreshLegend();
     }
 
@@ -156,28 +155,29 @@ public class ScrollCalendar extends LinearLayoutCompat implements ResProvider {
 
     private void setupSeparatorStyle() {
         // Legend
-        View separator = findViewById(R.id.separator);
-        TypedArray typedArray = getContext().getTheme().obtainStyledAttributes(legendSeparatorStyle, attrs);
-        for (int i = 0; i < attrs.length; i++) {
-            switch (attrs[i]) {
-                case android.R.attr.background: {
-                    int resource = typedArray.getResourceId(i, 0);
-                    if (resource != 0) {
-                        separator.setBackgroundResource(resource);
-                    }
-                    break;
-                }
-                case android.R.attr.height: {
-                    int resource = typedArray.getDimensionPixelSize(i, 0);
-                    LayoutParams params = new LayoutParams(LayoutParams.MATCH_PARENT, resource);
-                    separator.setLayoutParams(params);
-                    break;
-                }
-                default:
-                    break;
-            }
-        }
-        typedArray.recycle();
+//        View separator = findViewById(R.id.separator);
+
+//        TypedArray typedArray = getContext().getTheme().obtainStyledAttributes(legendSeparatorStyle, attrs);
+//        for (int i = 0; i < attrs.length; i++) {
+//            switch (attrs[i]) {
+//                case android.R.attr.background: {
+//                    int resource = typedArray.getResourceId(i, 0);
+//                    if (resource != 0) {
+//                        separator.setBackgroundResource(resource);
+//                    }
+//                    break;
+//                }
+//                case android.R.attr.height: {
+//                    int resource = typedArray.getDimensionPixelSize(i, 0);
+//                    LayoutParams params = new LayoutParams(LayoutParams.MATCH_PARENT, resource);
+//                    separator.setLayoutParams(params);
+//                    break;
+//                }
+//                default:
+//                    break;
+//            }
+//        }
+//        typedArray.recycle();
     }
 
     private void refreshLegend() {
