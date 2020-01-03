@@ -8,11 +8,7 @@ import android.support.v7.widget.Toolbar;
 import com.rafalmanka.example.DateLabel;
 import com.rafalmanka.example.R;
 
-import java.util.Date;
-
 import pl.rafman.scrollcalendar.ScrollCalendar;
-import pl.rafman.scrollcalendar.adapter.ScrollCalendarAdapter;
-import pl.rafman.scrollcalendar.adapter.example.DefaultRangeScrollCalendarAdapter;
 import pl.rafman.scrollcalendar.contract.OnDateClickListener;
 
 public class RedLayoutActivity extends AppCompatActivity {

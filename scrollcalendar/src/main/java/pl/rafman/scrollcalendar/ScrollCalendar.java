@@ -10,7 +10,6 @@ import android.support.v7.widget.LinearLayoutCompat;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
-
 import pl.rafman.scrollcalendar.adapter.ResProvider;
 import pl.rafman.scrollcalendar.adapter.ScrollCalendarAdapter;
 import pl.rafman.scrollcalendar.adapter.example.DefaultDateScrollCalendarAdapter;

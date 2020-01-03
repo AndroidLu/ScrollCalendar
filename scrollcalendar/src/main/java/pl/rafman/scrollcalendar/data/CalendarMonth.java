@@ -116,6 +116,6 @@ public class CalendarMonth implements Serializable {
 
     @NonNull
     public String getMonthNameWithYear() {
-        return getMonthForInt(getMonth()) + " " + year;
+        return year + "年" + String.valueOf(getMonth() + 1) + "月";
     }
 }
